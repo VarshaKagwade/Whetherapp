@@ -1,0 +1,58 @@
+.wave{
+    opacity: 0.3;
+    position: absolute;
+    top:120%;
+    left:50%;
+    background: white;
+    width:50rem;
+    height:50rem;
+    margin-left: -25rem;
+    margin-top: -20rem;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1;
+}
+.wave .-three{
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2;
+}
+.wave .-two {
+    animation: drift 7000ms infinite linear;
+    z-index: 3 !important;
+    opacity: 0.2;
+}
+.mycard{
+    width: 30%;
+        left: 35%;
+        height: 85vh;
+        overflow: hidden;
+        /* top: 10%; */
+        margin-top: 50px;
+        border: none;
+        border-radius: 10px;
+}
+.mydiv{
+    position: absolute;
+    margin: 0 auto;
+        height: 85vh;
+            overflow: hidden;
+            border: none;
+            border-radius: 10px;
+       
+       
+      
+}
+@media only screen and (max-width: 768px) {
+    .mydiv{
+        height: 100vh;
+    }
+        .mycard {
+            width: 100%;
+            left: 0%;
+            height: 100vh;
+            margin-top: 0px;
+            border-radius: 10px;
+        }
+}
